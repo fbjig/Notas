@@ -47,7 +47,7 @@ cat /etc/vsftpd.conf.backup | grep -v "^#" > /etc/vsftpd.conf # crea una copia l
 	#Hacer nano del archivo nuevo y pegar las siguientes 3 lineas
 	chroot_local_user=YES
 	chroot_list_enable=YES
-	chroot_list_file=/etc/vsftpd.chroot_listchroot_local_user=YES
+	chroot_list_file=/etc/vsftpd.chroot_list
 	write_enable=YES
 	local_root=/var/www
 
