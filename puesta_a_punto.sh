@@ -56,9 +56,10 @@ nano /etc/vsftpd.chroot_list # ponemos el nombre del usuario con el que accedemo
 service vsftpd restart
 #quedaria limitar que este usuario no pueda acceder a la carpeta que quiera.
 
-#Añadir usuario existente a grupo existente
+#GRUPOS UBUNTU
 cat /etc/group    # listar grupos del sistema
 sudo usermod -a -G groupName userName    # poner el grupo al usuerio
+deluser <username> <groupname>    #quitar grupo al usuario
 
 #INSTALAR LARAVEL
 sudo apt-get install composer
