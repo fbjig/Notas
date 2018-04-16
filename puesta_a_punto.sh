@@ -44,7 +44,7 @@ sudo mv /etc/vsftpd.conf /etc/vsftpd.conf.backup # backup de config
 sudo su # para hacer el siguiente comando
 cat /etc/vsftpd.conf.backup | grep -v "^#" > /etc/vsftpd.conf # crea una copia limpia. Hacerlo como sudo su.
 	
-	#Hacer nano del archivo nuevo y pegar las siguientes 3 lineas
+	#Hacer nano del archivo nuevo (el que no es backup) y pegar las siguientes 3 lineas
 	chroot_local_user=YES
 	chroot_list_enable=YES
 	chroot_list_file=/etc/vsftpd.chroot_list
